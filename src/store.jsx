@@ -14,14 +14,14 @@ function ListReducer(state = initialState, action) {
             var newList = state.list;
             newList.push(action.payload)
             var newState = {
-                list: newList
+                list: [...newList]
             }
             return newState;
         case 'delete_note':
             var newList = state.list;
             newList.splice(action.payload,1);
             var newState = {
-                list: newList
+                list: [...newList]
             }
             return newState;
         default: return initialState;

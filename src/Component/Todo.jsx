@@ -32,7 +32,6 @@ function Todo(props) {
                             {item}
                             <button onClick={() => {
                                 props.deleteNote(i);
-                                setInputData("");
                             }
                             }>Delete</button>
                         </div>
